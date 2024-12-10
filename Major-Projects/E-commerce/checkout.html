@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to ShopCart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Checkout</h2>
+        <form action="Payment.html" method="POST" class="checkout-form">
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <button type="submit" class="btn">Place Order</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shopping Cart. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

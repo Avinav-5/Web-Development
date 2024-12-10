@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #2874f0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    text-align: left;
+    margin: 0px 10px;
+    font-size: 50px;
+}
+header nav{
+    text-align: right;
+    line-height: 3;
+    font-size: 20px;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+
+/* Container styling */
+.container {
+    max-width: 700px;
+    min-height: 390px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.container h2 {
+    background-color: #4CAF50; /* Green background for payment header */
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: white; /* White text color */
+    padding: 20px; /* Padding for the header */
+    border-radius: 8px; /* Rounded corners for the header */
+    text-align: center; /* Center header text */
+}
+
+/* Payment Methods styling */
+.payment-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.payment-method {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid rgb(130, 126, 126);
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    color: #333;
+}
+
+h2{
+    border: 2px solid rgb(157, 154, 154);
+}
+
+.payment-method:hover {
+    background-color: #e6e6e6;
+    border-color: #4CAF50;
+}
+
+.payment-method:last-child {
+    margin-right: 0;
+}
+
+.payment-method.active {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+/* Payment Options Styling */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment-options label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.payment-options select,
+.payment-options input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+.payment-options select:focus,
+.payment-options input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.payment-options button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-options button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2874f0;
+    color: white;
+    margin-top: 30px;
+}
+
+
+

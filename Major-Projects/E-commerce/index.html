@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopCart - Home, Products & Contact</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to ShopCart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#contact">Contact Us</a>
+            <a href="Login.html">Login</a>
+        </nav>
+    </header>
+
+    <!-- Home Section (Full Screen) -->
+    <section id="home" class="hero-section">
+        <div class="banner-card">
+            <div class="banner-content">
+                <h2>Exclusive Discounts Just for You!</h2>
+                <p class="sales-text" style="color: #000000;">Up to 70% off on all items!</p>
+                <p class="quote-text" style="color: #000000;">"The best things in life are on sale!"</p>
+                <button class="shop-now-btn">Shop Now</button>
+            </div>
+            <div class="banner-image">
+                <img src="https://media.istockphoto.com/id/1224339637/photo/online-shop-website-on-home-office-setup.jpg?s=612x612&w=0&k=20&c=sPmF5_KvgsoR1AYRWXBdAf3qHGAeiGvkHE3_0O4OA3g=" alt="Sale Banner">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section (Full Screen) -->
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- First Row -->
+            <div class="product-banner electronics-banner">
+                <a href="electronics.html">
+                    <div class="banner-content">
+                        <h3 style="color: #000000;">Electronics</h3>
+                        <p style="color: #000000;">"Latest tech, best prices!"</p>
+                    </div>
+                </a>
+            </div>
+            <div class="product-banner fashion-banner">
+                <a href="fashion.html">
+                    <div class="banner-content">
+                        <h3 style="color: #000000;">Fashion</h3>
+                        <p style="color: #000000;">"Stay stylish, stay trendy."</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Second Row -->
+            <div class="product-banner home-appliances-banner">
+                <a href="home-appliances.html">
+                    <div class="banner-content">
+                        <h3 style="color: #000000;">Home Appliances</h3>
+                        <p style="color: #000000;">"Upgrade your home comfort."</p>
+                    </div>
+                </a>
+            </div>
+            <div class="product-banner beauty-health-banner">
+                <a href="beauty-health.html">
+                    <div class="banner-content">
+                        <h3 style="color: #000000;">Beauty & Health</h3>
+                        <p style="color: #000000;">"Enhance your beauty and well-being."</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Full Screen) -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>We're here to help! Reach out to us with any questions or concerns.</p>
+        <div class="contact-details">
+            <h3>Our Contact Information</h3>
+            <p><strong>Email:</strong> support@shopcart.com</p>
+            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+            <p><strong>Address:</strong> 123 ShopCart St, Commerce City, 12345</p>
+        </div>
+        
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ShopCart. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

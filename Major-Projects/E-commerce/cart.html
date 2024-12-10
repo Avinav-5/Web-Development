@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="app.js" defer></script><!-- Make sure this script is included -->
+    <script src="app1.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to ShopCart</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Your Cart</h2>
+
+    <!-- Ensure this has the correct class or id for items -->
+    <div class="cart" id="cart-container">
+        <!-- Cart items will be injected here by JS -->
+    </div>
+
+    <!-- Ensure this has the correct class or id for total -->
+    <div class="total" id="total-container">
+        <h3>Total: Rs 0.00</h3>
+        <button class="checkout-btn" id="clear-cart-btn">Clear</button>
+        <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+    
+</div>
+
+<footer>
+    <p>&copy; 2024 My Shop. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>

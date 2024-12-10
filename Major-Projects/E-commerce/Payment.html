@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="Payment.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to ShopCart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Select Payment Method</h2>
+
+        <div class="payment-methods">
+            <div class="payment-method" id="upi-method">UPI</div>
+            <div class="payment-method" id="netbanking-method">Net Banking</div>
+            <div class="payment-method" id="cod-method">Cash on Delivery</div>
+        </div>
+
+        <div class="payment-options" id="upi-options" style="display: none;">
+            <label for="upi-app">Choose UPI App</label>
+            <select id="upi-app">
+                <option value="phonepe">PhonePe</option>
+                <option value="gpay">Google Pay</option>
+                <option value="paytm">Paytm</option>
+                <option value="manual">Enter UPI ID Manually</option>
+            </select>
+            <input type="text" id="upi-id" placeholder="Enter UPI ID" style="display: none;">
+            <button onclick="alert('UPI Payment Selected')">Proceed with UPI</button>
+        </div>
+
+        <div class="payment-options" id="netbanking-options" style="display: none;">
+            <label for="bank">Choose Your Bank</label>
+            <select id="bank">
+                <option value="hdfc">HDFC Bank</option>
+                <option value="icici">ICICI Bank</option>
+                <option value="sbi">SBI</option>
+                <option value="axis">Axis Bank</option>
+            </select>
+            <button onclick="alert('Net Banking Selected')">Proceed with Net Banking</button>
+        </div>
+
+        <div class="payment-options" id="cod-options" style="display: none;">
+            <p>Cash on Delivery selected. Proceed to place your order.</p>
+            <button onclick="alert('Cash on Delivery Selected')">Place Order</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Shop. All rights reserved.</p>
+    </footer>
+
+<script>
+        document.getElementById('upi-method').addEventListener('click', function() {
+            showOptions('upi-options');
+        });
+
+        document.getElementById('netbanking-method').addEventListener('click', function() {
+            showOptions('netbanking-options');
+        });
+
+        document.getElementById('cod-method').addEventListener('click', function() {
+            showOptions('cod-options');
+        });
+
+        function showOptions(optionId) {
+            document.querySelectorAll('.payment-options').forEach(option => {
+                option.style.display = 'none';
+            });
+            document.getElementById(optionId).style.display = 'block';
+        }
+</script>
+
+</body>
+</html>

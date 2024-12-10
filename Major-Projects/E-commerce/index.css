@@ -1,0 +1,285 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #2874f0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    text-align: left;
+    margin: 0px 10px;
+    font-size: 50px;
+}
+header nav{
+    text-align: right;
+    line-height: 3;
+    font-size: 20px;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #7c7979, #9b9998);
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height:500px;
+}
+
+/* Banner Card */
+.banner-card {
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    max-width: 1200px;
+    overflow: hidden;
+    width: 90%;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Banner Content */
+.banner-content {
+    padding: 3rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d8dbdd;
+    position: relative;
+}
+
+.banner-content h2 {
+    font-size: 2.8rem;
+    color: #141313;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.sales-text {
+    font-size: 1.8rem;
+    color: #ff4500;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quote-text {
+    font-size: 1.2rem;
+    color: #040404;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Banner Button */
+.shop-now-btn {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.shop-now-btn:hover {
+    background-color: #ff4500;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Banner Image */
+.banner-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(198, 198, 203);
+}
+
+.banner-image img {
+    width: 89%;
+    height: 89%;
+    border : 10px solid black;
+    border-radius: 15px;
+    transition: transform 0.5s;
+}
+
+.banner-card:hover .banner-image img {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact-section {
+    height: 100vh; /* Full screen height */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-details p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
+
+/* Products Section */
+.products-section {
+    height: 100vh; /* Full screen height */
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.products-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Product Banner */
+.product-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 300px;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-banner a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-banner:hover {
+    transform: scale(1.05);
+}
+
+.banner-content h3 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #000000;
+
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    color: #020101;
+}
+
+/* Category Specific Banners */
+.electronics-banner {
+    background-image: url('https://media.istockphoto.com/id/1205511045/photo/online-shopping-concept-desktop-with-computer-table-shopping-bags-smartphone-present-box-3d.jpg?s=612x612&w=0&k=20&c=Oin6jzaXWlnunOdK6UqXgQOAwCqQ0Svqx2saCdLkWJo=');
+}
+
+.fashion-banner {
+    background-image: url('https://media.istockphoto.com/id/2158930037/photo/shopping-mall.jpg?s=612x612&w=0&k=20&c=Len5iUjJHYBsXybsCz8h1BuB6ci29BnzfTNe43YRMEQ=');
+}
+
+.home-appliances-banner {
+    background-image: url('https://media.istockphoto.com/id/1211554164/photo/3d-render-of-home-appliances-collection-set.jpg?s=612x612&w=0&k=20&c=blm3IyPyZo5ElWLOjI-hFMG-NrKQ0G76JpWGyNttF8s=');
+}
+
+.beauty-health-banner {
+    background-image: url('https://media.istockphoto.com/id/487770577/photo/makeup-set-on-table-front-view.jpg?s=612x612&w=0&k=20&c=IS_ZuHCF3N66jhDMwt2s7J_PGWABlpv2ISEAwpJ4JKU=');
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2874f0;
+    color: white;
+}

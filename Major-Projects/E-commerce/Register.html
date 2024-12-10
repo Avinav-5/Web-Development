@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | E-Commerce</title>
+    <link rel="stylesheet" href="Login.css">
+    <script>
+        function validateForm() {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match. Please enter the same password.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to ShopCart</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Login.html">Login</a>
+        <a href="index.html #contact">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <h2>Register here</h2>
+        <form action="php/register.php" method="POST" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="btn">Sign In</button>
+            <div class="form-footer">
+                <p>Have an account? <a href="Login.html">Sign in</a></p>
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 ShopCart. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

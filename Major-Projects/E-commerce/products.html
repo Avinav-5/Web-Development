@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Products</title>
+    <link rel="stylesheet" href="products.css">
+    <script src="app.js" defer></script>
+    <!-- <script src="app1.js"></script> -->
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to ShopCart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Available Products</h2>
+
+         <!-- Products Section in a Grid -->
+         <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images1/Tshirt.jpeg" alt="Phone">
+                <h3>Tshirt</h3>
+                <p class="price">Rs 499.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Tshirt', 499.00, 'images1/Tshirt.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images1/Jeans.jpeg" alt="Laptop">
+                <h3>Jeans</h3>
+                <p class="price">Rs 1299.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Jeans', 1299.00, 'images1/Jeans.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images1/Shirt.jpeg" alt="Jacket">
+                <h3>Shirt</h3>
+                <p class="price">Rs 599.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Shirt', 599.00, 'images1/Shirt.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images1/Shoes.jpeg" alt="Book">
+                <h3>Shoes</h3>
+                <p class="price">Rs 899.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Shoe', 899.00, 'images1/Shoes.jpeg')">Add to Cart</button>
+            </div>
+
+             <!-- Product 5 -->
+             <div class="product-card">
+                <img src="images1/Headphone.jpeg" alt="Headphones">
+                <h3>Headphones</h3>
+                <p class="price">Rs 1999.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Headphones', 1999.00 ,'images1/Headphone.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="images1/Tablet.jpeg" alt="Tablet">
+                <h3>Tablet</h3>
+                <p class="price">Rs 20000.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Tablet', 20000.00 ,'images1/Tablet.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="images1/Watch.jpeg" alt="Smartwatch">
+                <h3>Smartwatch</h3>
+                <p class="price">Rs 2999.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Smartwatch', 2999.00, 'images1/Watch.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="images1/Bagpack.jpeg" alt="Backpack">
+                <h3>Backpack</h3>
+                <p class="price">Rs 5000.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Backpack', 5000.00, 'images1/Bagpack.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="images1/Shoes1.jpeg" alt="Shoes">
+                <h3>Shoes</h3>
+                <p class="price">Rs 1999.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Shoes', 1999.00 ,'images1/Shoes1.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card">
+                <img src="images1/Camera.jpeg" alt="Camera">
+                <h3>Camera</h3>
+                <p class="price">Rs 20000.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Camera', 20000.00 ,'images1/Camera.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-card">
+                <img src="images1/Game.jpeg" alt="Gaming Console">
+                <h3>Gaming Console</h3>
+                <p class="price">Rs 1599.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Gaming Console', 1599.00 ,'images1/Game.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-card">
+                <img src="images1/Speaker.jpeg" alt="Bluetooth Speaker">
+                <h3>Bluetooth Speaker</h3>
+                <p class="price">Rs 2999.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Bluetooth Speaker', 2999.00 ,'images1/Speaker.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product-card">
+                <img src="images1/Tv.jpeg" alt="Smart TV">
+                <h3>Smart TV</h3>
+                <p class="price">Rs 25000.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Smart TV', 25000.00 ,'images1/Tv.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="product-card">
+                <img src="images1/Microwave.jpeg" alt="Microwave">
+                <h3>Microwave</h3>
+                <p class="price">Rs 25000.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Microwave', 25000.00 ,'images1/Microwave.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 15 -->
+            <div class="product-card">
+                <img src="images1/Blender.jpeg" alt="Blender">
+                <h3>Blender</h3>
+                <p class="price">Rs 5000.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Blender', 5000.00 ,'images1/Blender.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 16 -->
+            <div class="product-card">
+                <img src="images1/Watch1.jpeg" alt="Watch">
+                <h3>Watch</h3>
+                <p class="price">Rs 2000.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Watch', 2000.00 ,'images1/Watch1.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 17 -->
+            <div class="product-card">
+                <img src="images1/DEsk lamp.jpeg" alt="Desk Lamp">
+                <h3>Desk Lamp</h3>
+                <p class="price">Rs 2000.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Desk Lamp', 2000.00 ,'images1/DEsk lamp.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 18 -->
+            <div class="product-card">
+                <img src="images1/Game chair.jpeg" alt="Gaming Chair">
+                <h3>Gaming Chair</h3>
+                <p class="price">$1800.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Gaming Chair', 1800.00 ,'images1/Game chair.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 19 -->
+            <div class="product-card">
+                <img src="images1/VR set.jpeg" alt="VR Headset">
+                <h3>VR Headset</h3>
+                <p class="price">Rs 5000.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('VR Headset', 5000.00 ,'images1/VR set.jpeg')">Add to Cart</button>
+            </div>
+
+            <!-- Product 20 -->
+            <div class="product-card">
+                <img src="images1/Electric kettle.jpeg" alt="Electric Kettle">
+                <h3>Electric Kettle</h3>
+                <p class="price">Rs 2000.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="add-to-cart-btn" onclick="addToCart('Electric Kettle', 2000.00 ,'images1/Electric kettle.jpeg')">Add to Cart</button>
+
+            <!-- You can continue adding more products here using the same structure -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shopping Cart. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

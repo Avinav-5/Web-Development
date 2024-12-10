@@ -1,0 +1,129 @@
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #2874f0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    text-align: left;
+    margin: 0px 10px;
+    font-size: 50px;
+}
+header nav {
+    text-align: right;
+    line-height: 3;
+    font-size: 20px;
+}
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    min-height: 500px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Cart Styles */
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.price {
+    font-size: 16px;
+    color: #ff5722;
+    margin: 10px 0;
+}
+
+input[type="number"] {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.remove-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Total Section */
+.total {
+    text-align: right;
+    margin-top: 30px;
+    padding-top: 300px;
+}
+
+.checkout-btn {
+    background-color: #2874f0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.checkout-btn:hover {
+    background-color: #1e5cb8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2874f0;
+    color: white;
+    margin-top: 30px;
+}
